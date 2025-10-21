@@ -1,0 +1,45 @@
+.rockBox {
+    border: 3px solid #333;
+    border-radius: 15px;
+    width: 20rem;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.rockBox h1 {
+    font-size: 2rem;
+    margin: 0;
+    color: #333;
+}
+
+.rockBox .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #f9f9f9;
+    border: 2px solid #ddd;
+}
+
+.rockBox .item img {
+    width: 120px;
+    height: 120px;
+}
+
+.rockBox h2 {
+    font-size: 1.5rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+.rockBox h2 {
+    color: #333;
+}
