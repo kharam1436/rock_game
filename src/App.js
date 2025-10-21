@@ -4,7 +4,7 @@ import { GameBox } from './component/GameBox';
 import { SelectBox } from './component/SelectBox';
 import rock from './asset/rock.png';
 import scissors from './asset/scissors.png';
-import paper from './asset/paper.png';
+import paper from './asset/paper.webp';
 
 const choice = {
   rock: {

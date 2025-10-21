@@ -1,7 +1,7 @@
 import React from 'react'
 import rock from '../asset/rock.png';
 import scissors from '../asset/scissors.png';
-import paper from '../asset/paper.png';
+import paper from '../asset/paper.webp';
 
 const choice = {
   rock: {
