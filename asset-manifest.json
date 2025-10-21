@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/rock_game/static/css/main.562794fc.css",
+    "main.js": "/rock_game/static/js/main.bbd656ec.js",
+    "static/js/453.121d11c9.chunk.js": "/rock_game/static/js/453.121d11c9.chunk.js",
+    "static/media/scissors.png": "/rock_game/static/media/scissors.4034b26b0b869c53850b.png",
+    "static/media/rock.png": "/rock_game/static/media/rock.c764250c23e01b48c74f.png",
+    "static/media/paper.png": "/rock_game/static/media/paper.f57c77b1141a901b7dd2.png",
+    "index.html": "/rock_game/index.html",
+    "main.562794fc.css.map": "/rock_game/static/css/main.562794fc.css.map",
+    "main.bbd656ec.js.map": "/rock_game/static/js/main.bbd656ec.js.map",
+    "453.121d11c9.chunk.js.map": "/rock_game/static/js/453.121d11c9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.562794fc.css",
+    "static/js/main.bbd656ec.js"
+  ]
+}
