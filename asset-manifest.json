@@ -1,18 +1,17 @@
 {
   "files": {
-    "main.css": "/rock_game/static/css/main.562794fc.css",
-    "main.js": "/rock_game/static/js/main.bbd656ec.js",
+    "main.css": "/rock_game/static/css/main.37ca97cf.css",
+    "main.js": "/rock_game/static/js/main.a0b6a3bf.js",
     "static/js/453.121d11c9.chunk.js": "/rock_game/static/js/453.121d11c9.chunk.js",
-    "static/media/scissors.png": "/rock_game/static/media/scissors.4034b26b0b869c53850b.png",
-    "static/media/rock.png": "/rock_game/static/media/rock.c764250c23e01b48c74f.png",
-    "static/media/paper.png": "/rock_game/static/media/paper.f57c77b1141a901b7dd2.png",
+    "static/media/paper.webp": "/rock_game/static/media/paper.c7192f9a6efdb987f7e4.webp",
+    "static/media/scissors.png": "/rock_game/static/media/scissors.514f33ea25936a0f0894.png",
     "index.html": "/rock_game/index.html",
-    "main.562794fc.css.map": "/rock_game/static/css/main.562794fc.css.map",
-    "main.bbd656ec.js.map": "/rock_game/static/js/main.bbd656ec.js.map",
+    "main.37ca97cf.css.map": "/rock_game/static/css/main.37ca97cf.css.map",
+    "main.a0b6a3bf.js.map": "/rock_game/static/js/main.a0b6a3bf.js.map",
     "453.121d11c9.chunk.js.map": "/rock_game/static/js/453.121d11c9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.562794fc.css",
-    "static/js/main.bbd656ec.js"
+    "static/css/main.37ca97cf.css",
+    "static/js/main.a0b6a3bf.js"
   ]
 }
