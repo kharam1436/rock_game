@@ -5,18 +5,20 @@ import { SelectBox } from './component/SelectBox';
 import rock from './asset/rock.png';
 import scissors from './asset/scissors.png';
 import paper from './asset/paper.webp';
+import { ScoreBoard } from './component/ScoreBoard';
+import { COMPUTER, LOSE, PAPER, ROCK, SCISSORS, TIE, WIN, YOU } from './util/constant';
 
 export const choice = {
   rock: {
-    name: 'Rock',
+    name: ROCK,
     img: rock,
   },
   scissors: {
-    name: 'Scissors',
+    name: SCISSORS,
     img: scissors,
   },
   paper: {
-    name: 'Paper',
+    name: PAPER,
     img: paper,
   },
 };
@@ -24,13 +26,24 @@ export const choice = {
 function App() {
   const [userChoice, setUserChoice] = useState(null);
   const [computerChoice, setComputerChoice] = useState(null);
-  const [result, setResult] = useState('');
+  const [userResult, setUserResult] = useState('');
+  const [round, setRound] = useState(0);
+  const [userScore, setUserScore] = useState(0);
 
   const playGame = (userChoice) => {
     setUserChoice(choice[userChoice]);
     const computerChoice = randomChoice();
     setComputerChoice(computerChoice);
-    setResult(judgement(choice[userChoice], computerChoice));
+
+    // based on user choice and computer choice, find the winner
+    const userLocalResult = judgement(choice[userChoice], computerChoice);
+    setScore(userLocalResult);
+    setUserResult(userLocalResult);
+  };
+
+  const setScore = (userResult) => {
+    setRound(round + 1);
+    userResult === WIN && setUserScore(userScore + 1);
   };
 
   const randomChoice = () => {
@@ -40,33 +53,36 @@ function App() {
     return choice[final];
   };
 
-  // Simple Win and Lose Logic
+  // Simple Win and Lose Logic for User
   const judgement = (user, computer) => {
     if (user.name === computer.name) {
-      return 'Tie';
-    } else if (user.name === 'Rock') {
-      return computer.name === 'Scissors' ? 'Win' : 'Lose';
-    } else if (user.name === 'Scissors') {
-      return computer.name === 'Paper' ? 'Win' : 'Lose';
-    } else if (user.name === 'Paper') {
-      return computer.name === 'Rock' ? 'Win' : 'Lose';
+      return TIE;
+    } else if (user.name === ROCK) {
+      return computer.name === SCISSORS ? WIN : LOSE;
+    } else if (user.name === SCISSORS) {
+      return computer.name === PAPER ? WIN : LOSE;
+    } else if (user.name === PAPER) {
+      return computer.name === ROCK ? WIN : LOSE;
     }
   };
 
   // based on user result, get computer result
   const getComputerResult = (userResult) => {
-    if (userResult === 'Win') return 'Lose';
-    if (userResult === 'Lose') return 'Win';
+    if (userResult === WIN) return LOSE;
+    if (userResult === LOSE) return WIN;
     return userResult;
   };
 
   return (
     <div className="App">
       <div className="PaperGame">
-        <GameBox title="You" item={userChoice} result={result} />
-        <GameBox title="Computer" item={computerChoice} result={getComputerResult(result)} />
+        <GameBox title={YOU} item={userChoice} result={userResult} />
+        <GameBox title={COMPUTER} item={computerChoice} result={getComputerResult(userResult)} />
       </div>
-      <SelectBox playGame={playGame} />
+      <div>
+        <SelectBox playGame={playGame} />
+        <ScoreBoard round={round} userScore={userScore} />
+      </div>
     </div>
   );
 }

@@ -1,7 +1,3 @@
-import React from 'react';
-import rock from '../asset/rock.png';
-import scissors from '../asset/scissors.png';
-import paper from '../asset/paper.webp';
 import { choice } from '../App';
 
 export const SelectBox = ({ playGame }) => {
