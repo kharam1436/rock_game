@@ -8,15 +8,15 @@ import paper from './asset/paper.webp';
 
 const choice = {
   rock: {
-    name: "Rock",
+    name: 'Rock',
     img: rock,
   },
   scissors: {
-    name: "Scissors",
+    name: 'Scissors',
     img: scissors,
   },
   paper: {
-    name: "Paper",
+    name: 'Paper',
     img: paper,
   },
 };
@@ -24,7 +24,7 @@ const choice = {
 function App() {
   const [userChoice, setUserChoice] = useState(null);
   const [computerChoice, setComputerChoice] = useState(null);
-  const [result, setResult] = useState("");
+  const [result, setResult] = useState('');
 
   const playGame = (userChoice) => {
     setUserChoice(choice[userChoice]);
@@ -43,20 +43,20 @@ function App() {
   // Simple Win and Lose Logic
   const judgement = (user, computer) => {
     if (user.name === computer.name) {
-      return "Tie";
-    } else if (user.name === "Rock") {
-      return computer.name === "Scissors" ? "Win" : "Lose";
-    } else if (user.name === "Scissors") {
-      return computer.name === "Paper" ? "Win" : "Lose";
-    } else if (user.name === "Paper") {
-      return computer.name === "Rock" ? "Win" : "Lose";
+      return 'Tie';
+    } else if (user.name === 'Rock') {
+      return computer.name === 'Scissors' ? 'Win' : 'Lose';
+    } else if (user.name === 'Scissors') {
+      return computer.name === 'Paper' ? 'Win' : 'Lose';
+    } else if (user.name === 'Paper') {
+      return computer.name === 'Rock' ? 'Win' : 'Lose';
     }
   };
 
   // based on user result, get computer result
   const getComputerResult = (userResult) => {
-    if (userResult === "Win") return "Lose";
-    if (userResult === "Lose") return "Win";
+    if (userResult === 'Win') return 'Lose';
+    if (userResult === 'Lose') return 'Win';
     return userResult;
   };
 
