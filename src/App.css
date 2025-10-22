@@ -8,13 +8,13 @@
 .PaperGame {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
 }
 
 .selectBox {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 1.2rem;
 }
 
 .selectBox button {
