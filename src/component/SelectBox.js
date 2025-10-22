@@ -2,21 +2,7 @@ import React from 'react';
 import rock from '../asset/rock.png';
 import scissors from '../asset/scissors.png';
 import paper from '../asset/paper.webp';
-
-const choice = {
-  rock: {
-    name: 'Rock',
-    img: rock,
-  },
-  scissors: {
-    name: 'Scissors',
-    img: scissors,
-  },
-  paper: {
-    name: 'Paper',
-    img: paper,
-  },
-};
+import { choice } from '../App';
 
 export const SelectBox = ({ playGame }) => {
   return (

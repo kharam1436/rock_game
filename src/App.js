@@ -6,7 +6,7 @@ import rock from './asset/rock.png';
 import scissors from './asset/scissors.png';
 import paper from './asset/paper.webp';
 
-const choice = {
+export const choice = {
   rock: {
     name: 'Rock',
     img: rock,
