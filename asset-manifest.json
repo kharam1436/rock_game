@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/rock_game/static/css/main.37ca97cf.css",
+    "main.css": "/rock_game/static/css/main.bb47c6ad.css",
     "main.js": "/rock_game/static/js/main.a0b6a3bf.js",
     "static/js/453.121d11c9.chunk.js": "/rock_game/static/js/453.121d11c9.chunk.js",
     "static/media/paper.webp": "/rock_game/static/media/paper.c7192f9a6efdb987f7e4.webp",
     "static/media/scissors.png": "/rock_game/static/media/scissors.514f33ea25936a0f0894.png",
     "index.html": "/rock_game/index.html",
-    "main.37ca97cf.css.map": "/rock_game/static/css/main.37ca97cf.css.map",
+    "main.bb47c6ad.css.map": "/rock_game/static/css/main.bb47c6ad.css.map",
     "main.a0b6a3bf.js.map": "/rock_game/static/js/main.a0b6a3bf.js.map",
     "453.121d11c9.chunk.js.map": "/rock_game/static/js/453.121d11c9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.37ca97cf.css",
+    "static/css/main.bb47c6ad.css",
     "static/js/main.a0b6a3bf.js"
   ]
 }
